@@ -1,2 +1,0 @@
-C:\Users\User\RiderProjects\Neary\publish-server\Neary.Server.pdb
-C:\Users\User\RiderProjects\Neary\publish-server\Neary.Server
