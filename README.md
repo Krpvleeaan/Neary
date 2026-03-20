@@ -13,22 +13,7 @@
 
 ---
 
-## Быстрый старт (сервер)
-
-```bash
-cd Neary.Server
-dotnet run
-```
-
-По умолчанию слушает **`http://0.0.0.0:5000`** — задайте свой хост/порт через переменные окружения или правку `Program.cs`, если нужно.
-
-Публикация под Linux (пример):
-
-```bash
-dotnet publish -c Release -o ./publish
-```
-
----
+Сервер по умолчанию слушает **`http://0.0.0.0:5000`** — задайте свой хост/порт через переменные окружения или правку `Program.cs`, если нужно.
 
 ## Мобильное приложение
 
@@ -36,15 +21,12 @@ dotnet publish -c Release -o ./publish
    ```json
    { "baseUrl": "http://192.168.1.10:5000" }
    ```
-   На физическом устройстве `localhost` указывает на сам телефон — используйте IP машины в LAN или публичный адрес сервера. Для эмулятора Android к хосту часто используют `http://10.0.2.2:5000`.
 
 2. Соберите Release и установите APK:
    ```bash
    dotnet build Neary.Mobile -c Release -f net9.0-android
    ```
    Подписанный пакет: `Neary.Mobile/bin/Release/net9.0-android/com.neary.tracker-Signed.apk`
-
-Файл `server.json` **не должен** содержать секретов — только URL; при необходимости добавьте локальный `server.local.json` в `.gitignore` (шаблон уже учтён).
 
 ---
 
@@ -62,10 +44,10 @@ dotnet publish -c Release -o ./publish
 ## Требования
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download)
-- Для Android: workload `maui-android` (`dotnet workload install maui`)
+- Для Android: workload `maui-android`
 
 ---
 
 ## Лицензия
 
-MIT — используйте свободно.
+MIT — свободное использование.
