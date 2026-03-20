@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "py73nV4pTqCyPj/MNrJrahBbkg7AdPgwPmKBRlt2HIk=",
+  "Source": "Neary.Server",
+  "BasePath": "_content/Neary.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

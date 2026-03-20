@@ -1,0 +1,36 @@
+# Build
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+publish/
+publish-*/
+release/
+out/
+*.apk
+*.aab
+*.idsig
+*.apk.idsig
+
+# IDE / OS
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+**/packages/
+project.lock.json
+project.fragment.lock.json
+
+# Secrets & local overrides (keep examples in repo)
+**/Resources/Raw/server.local.json
+
+# Rider
+*.DotSettings.user

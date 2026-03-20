@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Neary.Mobile.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#0D1117">
+
+    <Grid>
+        <!-- Full-screen map -->
+        <WebView x:Name="MapView"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="Fill" />
+
+        <!-- Bottom control panel -->
+        <Border x:Name="ControlPanel"
+                VerticalOptions="End"
+                Margin="16,0,16,24"
+                Padding="24,20"
+                StrokeThickness="0.5"
+                Stroke="#33FFFFFF"
+                BackgroundColor="#D91A1B2E">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="24" />
+            </Border.StrokeShape>
+            <Border.Shadow>
+                <Shadow Brush="Black" Offset="0,4" Radius="20" Opacity="0.5" />
+            </Border.Shadow>
+
+            <VerticalStackLayout Spacing="16">
+                <!-- Версия сборки из манифеста -->
+                <Label x:Name="VersionLabel"
+                       FontSize="11"
+                       FontFamily="OpenSansRegular"
+                       TextColor="#484F58"
+                       HorizontalTextAlignment="Center" />
+                <!-- Status label -->
+                <Label x:Name="StatusLabel"
+                       Text="Трансляция не активна"
+                       FontSize="13"
+                       FontFamily="OpenSansSemibold"
+                       TextColor="#8B949E"
+                       HorizontalTextAlignment="Center" />
+
+                <!-- User ID input -->
+                <Border BackgroundColor="#1A2332"
+                        Padding="4,0"
+                        StrokeThickness="1"
+                        Stroke="#30363D">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="14" />
+                    </Border.StrokeShape>
+                    <Entry x:Name="UserIdEntry"
+                           Placeholder="Введите ваш ID"
+                           PlaceholderColor="#484F58"
+                           TextColor="#E6EDF3"
+                           FontSize="15"
+                           FontFamily="OpenSansRegular"
+                           BackgroundColor="Transparent"
+                           HeightRequest="48"
+                           HorizontalTextAlignment="Center"
+                           Keyboard="Text"
+                           ReturnType="Done" />
+                </Border>
+
+                <!-- Toggle button -->
+                <Button x:Name="ToggleButton"
+                        Text="ЗАПУСТИТЬ ТРАНСЛЯЦИЮ"
+                        BackgroundColor="#3B82F6"
+                        TextColor="White"
+                        FontFamily="OpenSansSemibold"
+                        FontSize="15"
+                        CornerRadius="16"
+                        HeightRequest="56"
+                        Clicked="OnToggleClicked" />
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+
+</ContentPage>

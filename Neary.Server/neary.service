@@ -1,0 +1,16 @@
+[Unit]
+Description=Neary Location Tracker API
+After=network.target
+
+[Service]
+Type=exec
+ExecStart=/opt/neary/Neary.Server
+WorkingDirectory=/opt/neary
+Restart=on-failure
+RestartSec=5
+User=www-data
+Environment=DOTNET_gcServer=0
+Environment=DOTNET_GCHeapHardLimit=0x8000000
+
+[Install]
+WantedBy=multi-user.target
