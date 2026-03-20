@@ -1,0 +1,4 @@
+# GitHub Linguist: артефакты сборки и LLVM IR не должны определять «язык репозитория»
+**/*.ll linguist-generated=true
+**/obj/** linguist-vendored
+**/bin/** linguist-vendored

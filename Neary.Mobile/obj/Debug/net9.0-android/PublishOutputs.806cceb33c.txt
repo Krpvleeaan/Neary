@@ -1,3 +1,0 @@
-C:\Users\User\RiderProjects\Neary\Neary.Mobile\bin\Debug\net9.0-android\publish\com.neary.tracker-Signed.apk
-C:\Users\User\RiderProjects\Neary\Neary.Mobile\bin\Debug\net9.0-android\publish\com.neary.tracker.apk
-C:\Users\User\RiderProjects\Neary\Neary.Mobile\bin\Debug\net9.0-android\publish\_Microsoft.Android.Resource.Designer.dll

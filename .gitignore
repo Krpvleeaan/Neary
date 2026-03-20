@@ -1,4 +1,4 @@
-# Build
+# Build — не коммитить (иначе на GitHub вместо C# покажется LLVM из .ll в obj/)
 [Bb]in/
 [Oo]bj/
 [Ll]og/
